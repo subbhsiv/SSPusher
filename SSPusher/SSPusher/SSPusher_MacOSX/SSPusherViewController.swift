@@ -119,8 +119,8 @@ class SSPusherViewController: NSViewController {
         let selectedIndex = selectCertificatePopupButton.indexOfSelectedItem
         
         //Select Certificate
-        if selectedCertificateIndex == 0 && selectedIndex == 0 {
-            //Do nothing
+        if selectedIndex == 0 {
+            selectedCertificateIndex = 0
         }
         //Import Certificate
         else if selectCertificatePopupButton.indexOfSelectedItem == lastItemIndex {
